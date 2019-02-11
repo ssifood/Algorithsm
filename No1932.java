@@ -45,9 +45,9 @@ public class No1932 {
 		if (ret != -1) {
 			return ret;
 		}
-		cache[i][j] = ret;
+	
 
-		return ret = Math.max(calc(cache, ad, i + 1, j), calc(cache, ad, i + 1, j + 1)) + ad[i][j];
+		return cache[i][j] = Math.max(calc(cache, ad, i + 1, j), calc(cache, ad, i + 1, j + 1)) + ad[i][j];
 
 	}
 }
